@@ -1,0 +1,80 @@
+<div id="myButton" onclick= "alert('hello')";>Click me</div>
+<div id="myButton1">Click me1</div>
+<div id="myButton2">Click me2</div>
+<script>
+document.getElementById("myButton1").addEventListener("click",function(){
+    alert("hello again");
+})
+</script>
+<script src="script.js"></script>
+<script>
+var myVar1 ="String"; //characters
+var myVar2 = 10; // numbers/integer
+var myVar3 = true; // boolean
+var a = "a", b = "b", c = "c";
+
+var myVar4 = ["String", 5 , true,"String1", 10, "new value", "String2", 15];
+var myVar5 = ["String", 5 , true,"String1", 10, "new value", "String2", 15];
+console.log(myVar4.length);
+console.log(myVar4);//Arrays
+
+myVar4.push("String2");
+console.log(myVar4.length);
+console.log(myVar4);
+console.log(myVar4[myVar4.length-1]);
+
+myVar4.pop();
+console.log(myVar4[myVar4.length-1]);
+
+myVar4.shift();
+console.log(myVar4);
+
+console.log(myVar4.indexOf(true));
+
+myVar4.forEach(function(i,k){
+    console.log(i + " " + k);
+})
+
+console.log(myVar4);
+myVar4.splice(3,1);
+console.log(myVar4);
+
+var myVar6 = myVar4.concat(myVar5);
+console.log(myVar6);
+
+var myVar7 = myVar4.join(' /')
+console.log(myVar7);
+
+var myVar8 = myVar4.toString();
+console.log(myVar8);
+
+
+console.log(myVar6);
+var myVar9 = myVar6.slice(3,6);
+console.log(myVar9);
+
+</script>
+
+<script>
+var myObj1 = new Object;
+myObj1.Name = "Preeti";
+myObj1.Car = "Ford";
+myObj1.Year = 2015;
+myObj1.Model = "Mustang";
+myObj1.Cost = "$50000";
+console.log(myObj1);
+
+var myObj2 = {Name:"Vinay", Car:"Honda" , Year:2010, Model:"Civic", Cost:"$20000"}; 
+console.log(myObj2);
+
+var myObj3 = new myFun("Tejal", "Toyota", 2017, "Corolla", "$60000")
+console.log(myObj3);
+function myFun(a,b,c,d,e){
+    this.Name = a;
+    this.Car = b;
+    this.Year = c;
+    this.Model = d;
+    this.Cost = e;
+}
+
+</script>
